@@ -150,13 +150,14 @@ body{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     color: #434455;
     background-color: #FFFFFF;
 }
 
 .container{
-    width:1158px;
+    max-width:1158px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -182,6 +183,8 @@ header {
 
 header .container {
     display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
 }
 
 header nav {
@@ -236,7 +239,7 @@ address {
 address ul {
     display: flex;
     gap: 40px;
-    margin-left: 332px;
+    margin-left1: 332px;
 }
 
 address .address-list .address-link {
@@ -849,6 +852,118 @@ margin-bottom: 16px;
     margin: auto;
 }
 
-@media screen and (min-width: 320px)and (max-width:767px) {}
-@media screen and (min-width: 768px) and (max-width:1157px) {}
+@media screen and (min-width: 320px)and (max-width:767px) {
+
+}
+@media screen and (min-width: 768px) and (max-width:1157px) {
+    .container{
+        width:100%;
+        padding: 0 16px;
+    }
+    .header{
+        padding: 16px;
+    }
+    .header .container{
+        padding: 0;
+    }
+    .address-list{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+            
+    }
+    address .address-list .address-link{
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    }
+
+    .section-second {
+        padding: 96px 0;
+    }
+
+    .section-second .container .section-second-list {
+        display: flex;
+        gap: 24px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section-second .container .section-second-list-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .section-second-list .list-icon{
+        display: none;
+    }
+    .section-second-list-header {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+    }
+    .section-second-list-paragraph {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .section-third {
+        padding: 96px 0;
+    }
+
+    .section-third-header {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+    }
+
+    .section-third .container .section-third-list {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 24px;
+        justify-content: center;
+        row-gap: 64px;
+    }
+
+    .section-third .container .section-third-item {
+        width: 264px;
+    }
+
+    .section-fourth {
+        padding: 96px 0;
+    }
+
+    .section-fourth-header {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+    }
+
+    .section-fourth-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+        justify-content: center;
+    }
+
+    .section-fourth-item {
+        width: 356px;
+    }
+
+    footer .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+        row-gap: 72px;
+    }
+    footer .container .footer-logo {
+        margin-right: 0;
+    }
+        .subscribe-footer {
+            margin-left: 0;
+        }
+
+}
 @media screen and (min-width: 1158px) {}
